@@ -14,7 +14,7 @@
 			fifo-access-mode = <1>;
 			read-dummy-cycle = <8>;
 			trimmer1-val = <0>;
-			trimmer2-val = <0x10>;
+			trimmer2-val = <0x0c>;
 		};
 		sdmmc@3 {
 			clock-source-id = <8>; /* 3:PLLP_OUT0, 8:PLLC4_OUT0_LJ */
@@ -36,6 +36,13 @@
 //			enable-hs-rate-b;
 			enable-hs-rate-a = <1>;
 			init-state = <0>;
+		};
+		sd@0 {
+			/* These fields are informational as there is no
+			   GPIO driver in mb1/mb2. */
+			cd_gpio_pin = <0>;
+			cd_gpio_polarity = <0>;
+			en_vdd_sd_gpio = <0>;
 		};
 	};
 };

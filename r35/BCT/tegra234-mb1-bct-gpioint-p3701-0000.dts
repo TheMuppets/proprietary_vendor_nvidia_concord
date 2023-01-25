@@ -257,6 +257,7 @@
         port@EE {
             pin-0-int-line = <4>; // GPIO EE0 to INT0
             pin-1-int-line = <4>; // GPIO EE1 to INT0
+            pin-2-int-line = <4>; // GPIO EE2 to INT0
             pin-3-int-line = <4>; // GPIO EE3 to INT0
             pin-4-int-line = <4>; // GPIO EE4 to INT0
             pin-5-int-line = <4>; // GPIO EE5 to INT0

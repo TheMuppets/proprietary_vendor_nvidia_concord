@@ -12,14 +12,16 @@
         enable_dram_error_injection = <0>;
         enable_nvdec = <1>;
         enable_tsec = <1>;
-        enable_tz_encryption = <0>;
-        enable_vpr_encryption = <0>;
-        enable_gsc_encryption = <0>;
         disable_l2_tz_encryption_regeneration = <0>;
-        disable_gsc_encryption_regeneration = <0>;
         disable_vpr_encryption_regeneration = <0>;
+        enable_tz_encryption = <1>;
+        enable_vpr_encryption = <1>;
         enable_permissive_ccplex_firewalls = <0>;
         axi_ap_virtual_client = <1>;
+        enable_nsdram_encryption = <1>;
+        enable_blanket_nsdram_carveout = <1>;
+        enable_scf_tracker = <0>;
+        keep_xusb_pd_up = <1>;
 
         tsc_controls {
             tsc_locking_config = <0x119>;
@@ -206,70 +208,106 @@
             vrefo_calib_val = <0>;
             min_adc_fuse_rev = <1>;
             vdd_soc {
-                int { // SKU = 0
+                soc_vmon_config@0 { // SKU = INT
+                    sku_info = <0x0>;
                     vmin_threshold = <0x1D>;
                     vmax_threshold = <0x69>;
                 };
-                ta990sa { // SKU = 0x90
+                soc_vmon_config@1 { // SKU = TA990SA, TE992M
+                    sku_info = <0x90>;
                     vmin_threshold = <0x1D>;
                     vmax_threshold = <0x69>;
                 };
-                ta975sa { // SKU = 0x97
+                soc_vmon_config@2 { // SKU = TA975SA
+                    sku_info = <0x97>;
                     vmin_threshold = <0x1D>;
                     vmax_threshold = <0x69>;
                 };
-                te990m { // SKU = 0xD0
+                soc_vmon_config@3 { // SKU = TE990M
+                    sku_info = <0xD0>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x76>;
                 };
-                te980m { // SKU = 0xD3
+                soc_vmon_config@4 { // SKU = TE980M
+                    sku_info = <0xD3>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x76>;
                 };
-                ta979sa { // SKU = 0x92
+                soc_vmon_config@5 { // SKU = TA979SA, TA985SA
+                    sku_info = <0x92>;
                     vmin_threshold = <0x1D>;
                     vmax_threshold = <0x69>;
                 };
-                te985m { // SKU = 0xD2
+                soc_vmon_config@6 { // SKU = TE985M
+                    sku_info = <0xD2>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x76>;
                 };
-                te970m { // SKU = 0xD4
+                soc_vmon_config@7 { // SKU = TE970M
+                    sku_info = <0xD4>;
                     vmin_threshold = <0x17>;
+                    vmax_threshold = <0x76>;
+                };
+                soc_vmon_config@8 { // SKU = TE960M
+                    sku_info = <0xD5>;
+                    vmin_threshold = <0x1A>;
+                    vmax_threshold = <0x76>;
+                };
+                soc_vmon_config@9 { // SKU = TE950M
+                    sku_info = <0xD6>;
+                    vmin_threshold = <0x1A>;
                     vmax_threshold = <0x76>;
                 };
             };
             vdd_cpu {
-                int {  // SKU = 0
+                cpu_vmon_config@0 {  // SKU = INT
+                    sku_info = <0x0>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x6D>;
                 };
-                ta990sa { // SKU = 0x90
+                cpu_vmon_config@1 { // SKU = TA990SA, TE992M
+                    sku_info = <0x90>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x6D>;
                 };
-                ta975sa { // SKU = 0x97
+                cpu_vmon_config@2 { // SKU = TA975SA
+                    sku_info = <0x97>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x6D>;
                 };
-                te990m { // SKU = 0xD0
+                cpu_vmon_config@3 { // SKU = TE990M
+                    sku_info = <0xD0>;
                     vmin_threshold = <0x14>;
                     vmax_threshold = <0x7B>;
                 };
-                te980m { // SKU = 0xD3
+                cpu_vmon_config@4 { // SKU = TE980M
+                    sku_info = <0xD3>;
                     vmin_threshold = <0x14>;
                     vmax_threshold = <0x7B>;
                 };
-                ta979sa { // SKU = 0x92
+                cpu_vmon_config@5 { // SKU = TA979SA, TA985SA
+                    sku_info = <0x92>;
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x6D>;
                 };
-                te985m { // SKU = 0xD2
+                cpu_vmon_config@6 { // SKU = TE985M
+                    sku_info = <0xD2>;
                     vmin_threshold = <0x14>;
                     vmax_threshold = <0x7B>;
                 };
-                te970m { // SKU = 0xD4
+                cpu_vmon_config@7 { // SKU = TE970M
+                    sku_info = <0xD4>;
                     vmin_threshold = <0x14>;
+                    vmax_threshold = <0x7B>;
+                };
+                cpu_vmon_config@8 { // SKU = TE960M
+                    sku_info = <0xD5>;
+                    vmin_threshold = <0x15>;
+                    vmax_threshold = <0x7B>;
+                };
+                cpu_vmon_config@9 { // SKU = TE950M
+                    sku_info = <0xD6>;
+                    vmin_threshold = <0x15>;
                     vmax_threshold = <0x7B>;
                 };
             };
@@ -277,8 +315,8 @@
 
         ///////// SOCTHERM ///////////
         soctherm {
-            max_chip_limit = <0x73>;
-            min_chip_limit = <0xFFFFFFE2>;
+            max_chip_limit = <0x69>;
+            min_chip_limit = <0xFFFFFFE4>;
         };
 
         ///////// ECID ///////////

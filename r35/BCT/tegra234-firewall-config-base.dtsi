@@ -10,13 +10,11 @@
  * license agreement from NVIDIA Corporation is strictly prohibited.
  */
 
-/* Chip version = 214; */
-
+/* Chip version = 228; */
 / {
     tfc {
         /* tfc_version represent chip.platform.project version in TFC */
-        tfc_version = "214.0.0";
-
+        tfc_version = "228.0.0";
         addr_header_version = "a99f70ca50144fa976b02e601bbb771ad7c36b42ab5198031a2d0919e1dbd3ec";
 
         /* RLF Section */
@@ -2546,8 +2544,8 @@
         };
 
         reg@505 { /* PADCTL_G4_SCR_SCR_SOC_GPIO19_0 */
-            exclusion-info = <0>;
-            value = <0x00000000>;
+            exclusion-info = <2>;
+            value = <0x38000406>;
         };
 
         reg@506 { /* PADCTL_G4_SCR_SCR_SOC_GPIO41_0 */
@@ -5667,7 +5665,7 @@
 
         reg@1129 { /* GPCDMA_FLV_8CH_SCR_SCR_CH0_0 */
             exclusion-info = <2>;
-            value = <0x38000202>;
+            value = <0x20000000>;
         };
 
         reg@1130 { /* GPCDMA_FLV_8CH_SCR_SCR_CH1_0 */
@@ -6646,42 +6644,42 @@
         };
 
         reg@1325 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH0_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1326 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH1_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1327 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH2_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1328 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH3_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1329 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH4_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1330 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH5_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1331 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH6_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1332 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_CH7_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
@@ -6691,47 +6689,47 @@
         };
 
         reg@1334 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_DMA_RO_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1335 { /* GPCDMA_FLV_8CH_NON_SAFE_SCR_SCR_HYPER_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1336 { /* TKE_AON_SCR_TKESCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1337 { /* TKE_AON_SCR_TMRSCR0_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1338 { /* TKE_AON_SCR_TMRSCR1_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1339 { /* TKE_AON_SCR_TMRSCR2_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1340 { /* TKE_AON_SCR_TMRSCR3_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1341 { /* TKE_AON_SCR_WDTSCR0_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
         reg@1342 { /* HSP_INT_AON_SCR_SCR_C0_REG_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
@@ -6776,22 +6774,22 @@
         };
 
         reg@1351 { /* HSP_SHRD_SEM_AON_SCR_SS_0_REG_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x00000000>;
         };
 
         reg@1352 { /* HSP_SHRD_SEM_AON_SCR_SS_1_REG_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x00000000>;
         };
 
         reg@1353 { /* HSP_SHRD_SEM_AON_SCR_SS_2_REG_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x00000000>;
         };
 
         reg@1354 { /* HSP_SHRD_SEM_AON_SCR_SS_3_REG_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x00000000>;
         };
 
@@ -6816,12 +6814,12 @@
         };
 
         reg@1359 { /* GTE_GPIO_SCR_TESCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000222>;
         };
 
         reg@1360 { /* GTE_GPIO_SCR_TEDSCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38001010>;
         };
 
@@ -7021,17 +7019,17 @@
         };
 
         reg@1400 { /* PADCTL_SYS_SCR_SCR_SHUTDOWN_N_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x30000400>;
         };
 
         reg@1401 { /* PADCTL_SYS_SCR_SCR_PMU_INT_N_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x30000400>;
         };
 
         reg@1402 { /* PADCTL_SYS_SCR_SCR_SCE_ERROR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
@@ -7041,47 +7039,47 @@
         };
 
         reg@1404 { /* PADCTL_SYS_SCR_SCR_BATT_OC_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1405 { /* PADCTL_SYS_SCR_SCR_BOOTV_CTL_N_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1406 { /* PADCTL_SYS_SCR_SCR_CLK_32K_IN_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x30000400>;
         };
 
         reg@1407 { /* PADCTL_SYS_SCR_SCR_POWER_ON_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1408 { /* PADCTL_SYS_SCR_SCR_SOC_GPIO26_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1409 { /* PADCTL_SYS_SCR_SCR_SOC_GPIO27_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1410 { /* PADCTL_SYS_SCR_SCR_AO_RETENTION_N_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1411 { /* PADCTL_SYS_SCR_SCR_VCOMP_ALERT_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1412 { /* PADCTL_SYS_SCR_SCR_HDMI_CEC_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
@@ -7091,112 +7089,112 @@
         };
 
         reg@1414 { /* PADCTL_AO_SCR_SCR_UART3_RX_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1415 { /* PADCTL_AO_SCR_SCR_UART3_TX_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1416 { /* PADCTL_AO_SCR_SCR_GEN8_I2C_SDA_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1417 { /* PADCTL_AO_SCR_SCR_GEN8_I2C_SCL_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1418 { /* PADCTL_AO_SCR_SCR_SPI2_MOSI_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1419 { /* PADCTL_AO_SCR_SCR_GEN2_I2C_SCL_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1420 { /* PADCTL_AO_SCR_SCR_SPI2_CS0_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1421 { /* PADCTL_AO_SCR_SCR_GEN2_I2C_SDA_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1422 { /* PADCTL_AO_SCR_SCR_SPI2_SCK_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1423 { /* PADCTL_AO_SCR_SCR_SPI2_MISO_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1424 { /* PADCTL_AO_HV_SCR_SCR_CAN1_DOUT_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1425 { /* PADCTL_AO_HV_SCR_SCR_CAN1_DIN_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1426 { /* PADCTL_AO_HV_SCR_SCR_CAN0_DOUT_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1427 { /* PADCTL_AO_HV_SCR_SCR_CAN0_DIN_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1428 { /* PADCTL_AO_HV_SCR_SCR_CAN0_STB_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1429 { /* PADCTL_AO_HV_SCR_SCR_CAN0_EN_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1430 { /* PADCTL_AO_HV_SCR_SCR_SOC_GPIO49_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1431 { /* PADCTL_AO_HV_SCR_SCR_CAN0_ERR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1432 { /* PADCTL_AO_HV_SCR_SCR_CAN1_STB_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1433 { /* PADCTL_AO_HV_SCR_SCR_CAN1_EN_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1434 { /* PADCTL_AO_HV_SCR_SCR_SOC_GPIO50_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
         reg@1435 { /* PADCTL_AO_HV_SCR_SCR_CAN1_ERR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x20000000>;
         };
 
@@ -7311,12 +7309,12 @@
         };
 
         reg@1458 { /* MSS_AON_CFG_SCR_VTTGEN_CTRL_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x3a000404>;
         };
 
         reg@1459 { /* MSS_AON_CFG_SCR_VREFGEN_CTRL_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x3a000404>;
         };
 
@@ -7747,7 +7745,7 @@
 
         reg@1545 { /* PMC_IMPL_SCR_PG_FSIRAIL_SCR_0 */
             exclusion-info = <3>;
-            value = <0x38000404>;
+            value = <0x38000414>;
         };
 
         reg@1546 { /* PMC_IMPL_SCR_AUX_CLAMP_SCR_0 */
@@ -8436,97 +8434,97 @@
         };
 
         reg@1683 { /* SCRATCH_SCR_RSV1_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1684 { /* SCRATCH_SCR_RSV2_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1685 { /* SCRATCH_SCR_RSV3_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1686 { /* SCRATCH_SCR_RSV4_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1687 { /* SCRATCH_SCR_RSV5_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1688 { /* SCRATCH_SCR_RSV6_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1689 { /* SCRATCH_SCR_RSV7_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1690 { /* SCRATCH_SCR_RSV8_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1691 { /* SCRATCH_SCR_RSV9_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1692 { /* SCRATCH_SCR_RSV10_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000001>;
         };
 
         reg@1693 { /* SCRATCH_SCR_RSV11_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38004041>;
         };
 
         reg@1694 { /* SCRATCH_SCR_RSV12_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1695 { /* SCRATCH_SCR_RSV13_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1696 { /* SCRATCH_SCR_RSV14_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1697 { /* SCRATCH_SCR_RSV15_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1698 { /* SCRATCH_SCR_RSV16_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1699 { /* SCRATCH_SCR_RSV17_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38008081>;
         };
 
         reg@1700 { /* SCRATCH_SCR_RSV18_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38002021>;
         };
 
         reg@1701 { /* SCRATCH_SCR_RSV19_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38002021>;
         };
 
@@ -8541,12 +8539,12 @@
         };
 
         reg@1704 { /* SCRATCH_SCR_RSV22_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000101>;
         };
 
         reg@1705 { /* SCRATCH_SCR_RSV23_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000101>;
         };
 
@@ -8571,12 +8569,12 @@
         };
 
         reg@1710 { /* SCRATCH_SCR_RSV28_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000103>;
         };
 
         reg@1711 { /* SCRATCH_SCR_RSV29_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000303>;
         };
 
@@ -8586,7 +8584,7 @@
         };
 
         reg@1713 { /* SCRATCH_SCR_RSV31_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000101>;
         };
 
@@ -8596,12 +8594,12 @@
         };
 
         reg@1715 { /* SCRATCH_SCR_RSV33_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000101>;
         };
 
         reg@1716 { /* SCRATCH_SCR_RSV34_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000101>;
         };
 
@@ -8631,7 +8629,7 @@
         };
 
         reg@1722 { /* SCRATCH_SCR_RSV40_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38000003>;
         };
 
@@ -8977,7 +8975,7 @@
 
         reg@1791 { /* SCRATCH_SCR_RSV109_SCR_0 */
             exclusion-info = <3>;
-            value = <0x38000101>;
+            value = <0x38000303>;
         };
 
         reg@1792 { /* SCRATCH_SCR_RSV110_SCR_0 */
@@ -9186,7 +9184,7 @@
         };
 
         reg@1833 { /* AONCLUSTER_ERROR_COLLATOR_SCR_EC_SCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x38002020>;
         };
 
@@ -9206,12 +9204,12 @@
         };
 
         reg@1837 { /* TSC_SCR_TSCSCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x180003e3>;
         };
 
         reg@1838 { /* USEC_CNTR_SCR_USECSCR_0 */
-            exclusion-info = <2>;
+            exclusion-info = <3>;
             value = <0x30000767>;
         };
 
@@ -15458,7 +15456,7 @@
 
         reg@3087 { /* CBB_CENTRAL_CBB_FIREWALL_AXI_CBB_RESET_CAR_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x00000008>;
         };
 
         reg@3088 { /* CBB_CENTRAL_CBB_FIREWALL_AXI_CBB_RESET_CAR_BLF, CTL_SETTING */
@@ -16878,12 +16876,12 @@
 
         reg@3371 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C0_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3372 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C0_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3373 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C0_BLF, CTL_SETTING */
@@ -16893,12 +16891,12 @@
 
         reg@3374 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C1_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3375 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C1_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3376 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C1_BLF, CTL_SETTING */
@@ -16908,12 +16906,12 @@
 
         reg@3377 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C10_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3378 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C10_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3379 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C10_BLF, CTL_SETTING */
@@ -16923,12 +16921,12 @@
 
         reg@3380 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C2_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3381 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C2_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3382 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C2_BLF, CTL_SETTING */
@@ -16938,12 +16936,12 @@
 
         reg@3383 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C3_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3384 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C3_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3385 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C3_BLF, CTL_SETTING */
@@ -16953,12 +16951,12 @@
 
         reg@3386 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C4_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3387 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C4_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3388 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C4_BLF, CTL_SETTING */
@@ -16968,12 +16966,12 @@
 
         reg@3389 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C5_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3390 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C5_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3391 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C5_BLF, CTL_SETTING */
@@ -16983,12 +16981,12 @@
 
         reg@3392 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C6_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3393 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C6_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3394 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C6_BLF, CTL_SETTING */
@@ -16998,12 +16996,12 @@
 
         reg@3395 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C7_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3396 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C7_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3397 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C7_BLF, CTL_SETTING */
@@ -17013,12 +17011,12 @@
 
         reg@3398 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C8_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3399 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C8_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3400 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C8_BLF, CTL_SETTING */
@@ -17028,12 +17026,12 @@
 
         reg@3401 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C9_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3402 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C9_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000003>;
+            value = <0x0000000b>;
         };
 
         reg@3403 { /* CBB_CENTRAL_CBB_FIREWALL_CBB_SN_PCIE_C9_BLF, CTL_SETTING */
@@ -21123,12 +21121,12 @@
 
         reg@4220 { /* CBB_CENTRAL_CBB_FIREWALL_I2C1_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00004002>;
+            value = <0x00004042>;
         };
 
         reg@4221 { /* CBB_CENTRAL_CBB_FIREWALL_I2C1_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00004002>;
+            value = <0x00004042>;
         };
 
         reg@4222 { /* CBB_CENTRAL_CBB_FIREWALL_I2C1_BLF, CTL_SETTING */
@@ -21183,12 +21181,12 @@
 
         reg@4232 { /* CBB_CENTRAL_CBB_FIREWALL_I2C4_BLF, READ_CTL */
             exclusion-info = <4>;
-            value = <0xffffffff>;
+            value = <0x00004042>;
         };
 
         reg@4233 { /* CBB_CENTRAL_CBB_FIREWALL_I2C4_BLF, WRITE_CTL */
             exclusion-info = <4>;
-            value = <0xffffffff>;
+            value = <0x00004042>;
         };
 
         reg@4234 { /* CBB_CENTRAL_CBB_FIREWALL_I2C4_BLF, CTL_SETTING */
@@ -21303,12 +21301,12 @@
 
         reg@4256 { /* CBB_CENTRAL_CBB_FIREWALL_I2C9_BLF, READ_CTL */
             exclusion-info = <4>;
-            value = <0xffffffff>;
+            value = <0x00004042>;
         };
 
         reg@4257 { /* CBB_CENTRAL_CBB_FIREWALL_I2C9_BLF, WRITE_CTL */
             exclusion-info = <4>;
-            value = <0xffffffff>;
+            value = <0x00004042>;
         };
 
         reg@4258 { /* CBB_CENTRAL_CBB_FIREWALL_I2C9_BLF, CTL_SETTING */
@@ -25713,12 +25711,12 @@
 
         reg@5138 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00100009>;
+            value = <0x0010000b>;
         };
 
         reg@5139 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00100009>;
+            value = <0x0010000b>;
         };
 
         reg@5140 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, CTL_SETTING */
@@ -26867,18 +26865,18 @@
         };
 
         reg@5369 { /* CBB_CENTRAL_CBB_FIREWALL_SEU1SFTY_BLF, READ_CTL */
-            exclusion-info = <2>;
-            value = <0x0f000000>;
+            exclusion-info = <0>;
+            value = <0x00000000>;
         };
 
         reg@5370 { /* CBB_CENTRAL_CBB_FIREWALL_SEU1SFTY_BLF, WRITE_CTL */
-            exclusion-info = <2>;
-            value = <0x0f000000>;
+            exclusion-info = <0>;
+            value = <0x00000000>;
         };
 
         reg@5371 { /* CBB_CENTRAL_CBB_FIREWALL_SEU1SFTY_BLF, CTL_SETTING */
-            exclusion-info = <2>;
-            value = <0x80030000>;
+            exclusion-info = <0>;
+            value = <0x00000000>;
         };
 
         reg@5372 { /* CBB_CENTRAL_CBB_FIREWALL_SFTY_BLF, READ_CTL */
@@ -32839,12 +32837,12 @@
 
         reg@6563 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, ARF_SIZE */
             exclusion-info = <2>;
-            value = <0x00090000>;
+            value = <0x00010000>;
         };
 
         reg@6564 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, ADDR_LOW */
             exclusion-info = <2>;
-            value = <0x0b060000>;
+            value = <0x0b070000>;
         };
 
         reg@6565 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, ADDR_HIGH */
@@ -32854,12 +32852,12 @@
 
         reg@6566 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, READ_CTL */
             exclusion-info = <2>;
-            value = <0x0f000002>;
+            value = <0x00000004>;
         };
 
         reg@6567 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x0f000002>;
+            value = <0x00000004>;
         };
 
         reg@6568 { /* SCE_FABRIC, SCE_FIREWALL_ARF_5, CTL_SETTING */
@@ -33214,12 +33212,12 @@
 
         reg@6638 { /* SCE_FABRIC, SCE_FIREWALL_ARF_17, READ_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6639 { /* SCE_FABRIC, SCE_FIREWALL_ARF_17, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6640 { /* SCE_FABRIC, SCE_FIREWALL_ARF_17, CTL_SETTING */
@@ -33244,12 +33242,12 @@
 
         reg@6644 { /* SCE_FABRIC, SCE_FIREWALL_ARF_18, READ_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6645 { /* SCE_FABRIC, SCE_FIREWALL_ARF_18, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6646 { /* SCE_FABRIC, SCE_FIREWALL_ARF_18, CTL_SETTING */
@@ -33274,12 +33272,12 @@
 
         reg@6650 { /* SCE_FABRIC, SCE_FIREWALL_ARF_19, READ_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6651 { /* SCE_FABRIC, SCE_FIREWALL_ARF_19, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6652 { /* SCE_FABRIC, SCE_FIREWALL_ARF_19, CTL_SETTING */
@@ -33304,12 +33302,12 @@
 
         reg@6656 { /* SCE_FABRIC, SCE_FIREWALL_ARF_20, READ_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6657 { /* SCE_FABRIC, SCE_FIREWALL_ARF_20, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x0f000022>;
+            value = <0x0f000026>;
         };
 
         reg@6658 { /* SCE_FABRIC, SCE_FIREWALL_ARF_20, CTL_SETTING */
@@ -33379,12 +33377,12 @@
 
         reg@6671 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, ARF_SIZE */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x00000004>;
         };
 
         reg@6672 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, ADDR_LOW */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0b060390>;
         };
 
         reg@6673 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, ADDR_HIGH */
@@ -33394,27 +33392,27 @@
 
         reg@6674 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0f000000>;
         };
 
         reg@6675 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0f000000>;
         };
 
         reg@6676 { /* SCE_FABRIC, SCE_FIREWALL_ARF_23, CTL_SETTING */
             exclusion-info = <2>;
-            value = <0xc0000000>;
+            value = <0xc0030000>;
         };
 
         reg@6677 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, ARF_SIZE */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x00000054>;
         };
 
         reg@6678 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, ADDR_LOW */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0b06ff00>;
         };
 
         reg@6679 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, ADDR_HIGH */
@@ -33424,17 +33422,17 @@
 
         reg@6680 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, READ_CTL */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0f000000>;
         };
 
         reg@6681 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, WRITE_CTL */
             exclusion-info = <2>;
-            value = <0x00000000>;
+            value = <0x0f000000>;
         };
 
         reg@6682 { /* SCE_FABRIC, SCE_FIREWALL_ARF_24, CTL_SETTING */
             exclusion-info = <2>;
-            value = <0xc0000000>;
+            value = <0xc0030000>;
         };
 
         reg@6683 { /* SCE_FABRIC, SCE_FIREWALL_ARF_25, ARF_SIZE */

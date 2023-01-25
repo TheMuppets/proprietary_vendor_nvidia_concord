@@ -287,36 +287,6 @@
             value = <0x80020000>;
         };
 
-        reg@5138 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, READ_CTL : RAS error seen  at UEFI stage*/
-            exclusion-info = <0>;
-            value = <0x00100009>;
-        };
-
-        reg@5139 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, WRITE_CTL : RAS error seen at UEFI stage*/
-            exclusion-info = <0>;
-            value = <0x00100009>;
-        };
-
-        reg@5140 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_BLF, CTL_SETTING : RAS error seen at UEFI stage*/
-            exclusion-info = <0>;
-            value = <0x80030000>;
-        };
-
-        reg@5141 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_CAR_BLF, READ_CTL : FIREWALL ERR in MB2 - Coldboot*/
-            exclusion-info = <0>;
-            value = <0x00024a3f>;
-        };
-
-        reg@5142 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_CAR_BLF, WRITE_CTL : FIREWALL ERR in MB2 - Coldboot*/
-            exclusion-info = <0>;
-            value = <0x00000008>;
-        };
-
-        reg@5143 { /* CBB_CENTRAL_CBB_FIREWALL_QSPI0_CAR_BLF, CTL_SETTING : FIREWALL ERR in MB2 - Coldboot*/
-            exclusion-info = <0>;
-            value = <0x80030000>;
-        };
-
         reg@1965 { /* SCEPM_SCR_SCR_PRIVATE_0 : SLAVE Error seen in MB2, DCE*/
             exclusion-info = <0>;
             value = <0x38008080>;

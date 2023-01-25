@@ -1,4 +1,16 @@
 // NOTE: This file was auto generated: No manual change must be made in this file
+//##
+//## Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+//##
+//## NVIDIA CORPORATION and its licensors retain all intellectual property
+//## and proprietary rights in and to this material, related documentation
+//## and any modifications thereto. Any use, reproduction, disclosure or
+//## distribution of this material and related documentation without an express
+//## license agreement from NVIDIA CORPORATION is strictly prohibited.
+//##
+//## SPDX-FileCopyrightText: Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES
+//## SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+//##
 
 McGeneralizedCarveout5Cfg0 = <0x2002ffe>;
 McGeneralizedCarveout5Cfg1 = <0x0>;
@@ -223,13 +235,13 @@ McGeneralizedCarveout24ForceInternalAccess9 = <0x0>;
 McGeneralizedCarveout26Cfg0 = <0x320017fa>;
 McGeneralizedCarveout26Cfg1 = <0x0>;
 McGeneralizedCarveout26Access0 = <0x0>;
-McGeneralizedCarveout26Access1 = <0x200f080>;
-McGeneralizedCarveout26Access2 = <0x20>;
-McGeneralizedCarveout26Access3 = <0x5c000>;
+McGeneralizedCarveout26Access1 = <0x0>;
+McGeneralizedCarveout26Access2 = <0x0>;
+McGeneralizedCarveout26Access3 = <0x0>;
 McGeneralizedCarveout26Access4 = <0x0>;
-McGeneralizedCarveout26Access5 = <0xc0000000>;
-McGeneralizedCarveout26Access6 = <0x3c0fff>;
-McGeneralizedCarveout26Access7 = <0x1e10>;
+McGeneralizedCarveout26Access5 = <0x0>;
+McGeneralizedCarveout26Access6 = <0x0>;
+McGeneralizedCarveout26Access7 = <0x0>;
 McGeneralizedCarveout26Access8 = <0x0>;
 McGeneralizedCarveout26Access9 = <0x0>;
 McGeneralizedCarveout26ForceInternalAccess0 = <0x0>;
@@ -334,18 +346,6 @@ McGeneralizedCarveoutLite37Access6 = <0xff3c0fff>;
 McGeneralizedCarveoutLite37Access7 = <0xf0059e1f>;
 McGeneralizedCarveoutLite37Access8 = <0xf0c0003>;
 McGeneralizedCarveoutLite37Access9 = <0x30dc>;
-McGeneralizedCarveoutLite38Cfg0 = <0x7fa>;
-McGeneralizedCarveoutLite38Cfg1 = <0x2>;
-McGeneralizedCarveoutLite38Access0 = <0x7ff87fff>;
-McGeneralizedCarveoutLite38Access1 = <0xfe3dffbf>;
-McGeneralizedCarveoutLite38Access2 = <0xff703ff1>;
-McGeneralizedCarveoutLite38Access3 = <0xdfffffbb>;
-McGeneralizedCarveoutLite38Access4 = <0xfffff33f>;
-McGeneralizedCarveoutLite38Access5 = <0xffffc3c7>;
-McGeneralizedCarveoutLite38Access6 = <0xff3c0fff>;
-McGeneralizedCarveoutLite38Access7 = <0xf1f59fff>;
-McGeneralizedCarveoutLite38Access8 = <0xf0c0003>;
-McGeneralizedCarveoutLite38Access9 = <0x30dc>;
 McGeneralizedCarveoutLite39Cfg0 = <0x7fa>;
 McGeneralizedCarveoutLite39Cfg1 = <0x0>;
 McGeneralizedCarveoutLite39Access0 = <0x1>;

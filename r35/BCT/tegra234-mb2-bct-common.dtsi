@@ -9,6 +9,8 @@
         enable_eks = <1>;
         hwcrc_default_enable = <0>;
         disable_snor_provisioning = <1>;
+        uefi_auth_key_delegation_enable = <0>;
+        uefi_auth_key_pcp_hash = <0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>;
 
         mss_perf {
             mss_pm_disable = <0>;
