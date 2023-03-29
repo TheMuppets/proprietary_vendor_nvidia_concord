@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ * SPDX-FileCopyrightText: Copyright (c) 2021-2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause
  *
  * Redistribution and use in source and binary forms, with or without
@@ -38,6 +38,11 @@
     misc {
         disable_sc7 = <0>;
         enable_tsec = <0>;
+        enable_4pin_ram_code = <1>;
+        soctherm {
+            max_chip_limit = <0x69>;
+            min_chip_limit = <0xFFFFFFE4>;
+        };
         vmon {
             vdd_soc {
                 soc_vmon_config@0 {

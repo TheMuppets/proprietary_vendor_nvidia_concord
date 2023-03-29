@@ -358,111 +358,6 @@
         };
 
 		/* FSI Firewalls */
-        reg@2273 { /* FSI_CONTROL_FIREWALL_FSI_CAR_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2274 { /* FSI_CONTROL_FIREWALL_FSI_CAR_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x11000000>;
-        };
-
-        reg@2275 { /* FSI_CONTROL_FIREWALL_FSI_CAR_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x0003001c>;
-        };
-
-        reg@2303 { /* FSI_CONTROL_FIREWALL_FSI_DMA_CH_0_BLF, READ_CTL */
-            exclusion-info = <2>;
-            value = <0x1f000002>;
-        };
-
-        reg@2304 { /* FSI_CONTROL_FIREWALL_FSI_DMA_CH_0_BLF, WRITE_CTL */
-            exclusion-info = <2>;
-            value = <0x1f000002>;
-        };
-
-        reg@2327 { /* FSI_CONTROL_FIREWALL_FSI_DMA_COMMON_BLF, READ_CTL */
-            exclusion-info = <2>;
-            value = <0x1f000002>;
-        };
-
-        reg@2489 { /* FSI_CONTROL_FIREWALL_FSI_PM_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000001>;
-        };
-
-        reg@2490 { /* FSI_CONTROL_FIREWALL_FSI_PM_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x10000001>;
-        };
-
-        reg@2491 { /* FSI_CONTROL_FIREWALL_FSI_PM_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x0003001c>;
-        };
-
-        reg@2480 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A0_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2481 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A0_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x01000000>;
-        };
-
-        reg@2482 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A0_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x10030000>;
-        };
-
-        reg@2483 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A1_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2484 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A1_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x01000000>;
-        };
-
-        reg@2485 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A1_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x10030000>;
-        };
-
-        reg@2486 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A2_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2487 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A2_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x01000000>;
-        };
-
-        reg@2488 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A2_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x10030000>;
-        };
-
-        reg@2372 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, READ_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2373 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, WRITE_CTL */
-            exclusion-info = <0>;
-            value = <0x1f000000>;
-        };
-
-        reg@2374 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, CTL_SETTING */
-            exclusion-info = <0>;
-            value = <0x0003001c>;
-        };
-
         reg@7187 { /* DCE_FABRIC, DCE_FIREWALL_ARF_9, ARF_SIZE */
             exclusion-info = <0>;
             value = <0x00040000>;
@@ -583,19 +478,44 @@
             value = <0xc0030000>;
         };
 
-        reg@2384 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, READ_CTL */
+        reg@1343 { /* HSP_SHRD_MBOX_AON_SCR_SM_0_REG_0 */
             exclusion-info = <0>;
-            value = <0x1f000000>;
+            value = <0x38001414>;
         };
 
-        reg@2385 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, WRITE_CTL */
+        reg@1344 { /* HSP_SHRD_MBOX_AON_SCR_SM_1_REG_0 */
             exclusion-info = <0>;
-            value = <0x1f000000>;
+            value = <0x38001212>;
         };
 
-        reg@2386 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, CTL_SETTING */
+        reg@1345 { /* HSP_SHRD_MBOX_AON_SCR_SM_2_REG_0 */
             exclusion-info = <0>;
-            value = <0x0003001c>;
+            value = <0x38005050>;
+        };
+
+        reg@1346 { /* HSP_SHRD_MBOX_AON_SCR_SM_3_REG_0 */
+            exclusion-info = <0>;
+            value = <0x38009090>;
+        };
+
+        reg@1347 { /* HSP_SHRD_MBOX_AON_SCR_SM_4_REG_0 */
+            exclusion-info = <0>;
+            value = <0x38003030>;
+        };
+
+        reg@1348 { /* HSP_SHRD_MBOX_AON_SCR_SM_5_REG_0 */
+            exclusion-info = <0>;
+            value = <0x38009090>;
+        };
+
+        reg@1349 { /* HSP_SHRD_MBOX_AON_SCR_SM_6_REG_0 */
+            exclusion-info = <0>;
+            value = <0x38001414>;
+        };
+
+        reg@1350 { /* HSP_SHRD_MBOX_AON_SCR_SM_7_REG_0 */
+            exclusion-info = <0>;
+            value = <0x38001111>;
         };
 
     };

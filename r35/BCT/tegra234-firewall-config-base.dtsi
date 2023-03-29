@@ -11880,18 +11880,18 @@
         };
 
         reg@2372 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, READ_CTL */
-            exclusion-info = <10>;
+            exclusion-info = <2>;
             value = <0x1f000000>;
         };
 
         reg@2373 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, WRITE_CTL */
-            exclusion-info = <10>;
+            exclusion-info = <2>;
             value = <0x1f000000>;
         };
 
         reg@2374 { /* FSI_CONTROL_FIREWALL_FSI_HSP_COMMON_BLF, CTL_SETTING */
-            exclusion-info = <10>;
-            value = <0x0003001c>;
+            exclusion-info = <2>;
+            value = <0x0000001c>;
         };
 
         reg@2375 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_0_1_BLF, READ_CTL */
@@ -11940,18 +11940,18 @@
         };
 
         reg@2384 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, READ_CTL */
-            exclusion-info = <10>;
+            exclusion-info = <2>;
             value = <0x1f000000>;
         };
 
         reg@2385 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, WRITE_CTL */
-            exclusion-info = <10>;
+            exclusion-info = <2>;
             value = <0x1f000000>;
         };
 
         reg@2386 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SM_6_7_BLF, CTL_SETTING */
-            exclusion-info = <10>;
-            value = <0x0003001c>;
+            exclusion-info = <2>;
+            value = <0x0000001c>;
         };
 
         reg@2387 { /* FSI_CONTROL_FIREWALL_FSI_HSP_SS_0_BLF, READ_CTL */
@@ -12431,7 +12431,7 @@
 
         reg@2482 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A0_BLF, CTL_SETTING */
             exclusion-info = <2>;
-            value = <0x10030000>;
+            value = <0x80030000>;
         };
 
         reg@2483 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A1_BLF, READ_CTL */
@@ -12446,7 +12446,7 @@
 
         reg@2485 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A1_BLF, CTL_SETTING */
             exclusion-info = <2>;
-            value = <0x10030000>;
+            value = <0x80030000>;
         };
 
         reg@2486 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A2_BLF, READ_CTL */
@@ -12461,7 +12461,7 @@
 
         reg@2488 { /* FSI_CONTROL_FIREWALL_FSI_PADCTL_A2_BLF, CTL_SETTING */
             exclusion-info = <2>;
-            value = <0x10030000>;
+            value = <0x80030000>;
         };
 
         reg@2489 { /* FSI_CONTROL_FIREWALL_FSI_PM_BLF, READ_CTL */

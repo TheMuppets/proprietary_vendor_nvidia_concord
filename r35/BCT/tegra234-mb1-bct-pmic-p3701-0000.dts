@@ -24,15 +24,15 @@
 			commands {
 				/* SW Regulators POWER_SAVE_N */
 				command@0 {
-					reg-addr = <0x0c303058>;
-					mask = <0xffff>;
-					value = <0x54>;
+					reg-addr = <0x0c2f1a70>;
+					mask = <0x1>;
+					value = <0x0>;
 				};
 				/* VDD_SOC PSI */
 				command@1 {
-					reg-addr = <0x02437030>;
-					mask = <0xffff>;
-					value = <0x411>;
+					reg-addr = <0x022130b0>;
+					mask = <0x1>;
+					value = <0x0>;
 				};
 				command@2 {
 					reg-addr = <0x0c302000>;
@@ -235,6 +235,19 @@
 					value = <0x00000001>;
 				};
 			};
+		};
+	};
+	thermal {
+		block@0 {
+			pwm;
+			controller-id = <2>; /* PWM3 for fan */
+			source-frq-hz = <19200000>;
+			period-ns = <45334>; /* 22 KHz */
+			min-microvolts = <0>;
+			max-microvolts = <5000000>;
+			init-microvolts = <2500000>;
+			pwm-clock-enable;
+			enable;
 		};
 	};
     };
