@@ -2540,6 +2540,17 @@
             exclusion-info = <0>;
             value = <0x80030000>;
         };
+
+        reg@5126 { /* CBB_CENTRAL_CBB_FIREWALL_PWM7_BLF, READ_CTL */
+            exclusion-info = <2>;
+            value = <0x0010000a>;
+        };
+
+        reg@5127 { /* CBB_CENTRAL_CBB_FIREWALL_PWM7_BLF, WRITE_CTL */
+            exclusion-info = <2>;
+            value = <0x0010000a>;
+        };
+
         /* ARF Section */
         reg@5837 { /* FSI_FABRIC, FSI_CHSM_CPU_T_FIREWALL_ARF_0, ARF_SIZE */
             exclusion-info = <0>;

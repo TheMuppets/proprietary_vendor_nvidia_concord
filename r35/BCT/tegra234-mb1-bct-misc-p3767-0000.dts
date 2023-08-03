@@ -53,6 +53,30 @@
 				size = <0x0 0x0>; // 0MB
 				alignment = <0x0 0x0>; // 0MB
 			};
+
+			aux_info@CARVEOUT_CCPLEX_IST {
+				pref_base = <0x0 0x0>;
+				size = <0x0 0x0>; // 0MB
+				alignment = <0x0 0x0>; // 0MB
+			};
+		};
+
+		vmon {
+			vdd_soc {
+				soc_vmon_config@0 {
+					sku_info = <0x0>;
+					vmin_threshold = <0x1a>;
+					vmax_threshold = <0x76>;
+				};
+			};
+
+			vdd_cpu {
+				cpu_vmon_config@0 {
+					sku_info = <0x0>;
+					vmin_threshold = <0x15>;
+					vmax_threshold = <0x7b>;
+				};
+			};
 		};
 	};
 };

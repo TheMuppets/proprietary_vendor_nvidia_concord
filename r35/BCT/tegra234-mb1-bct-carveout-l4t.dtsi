@@ -11,6 +11,11 @@
 				size = <0x0 0x10000>; // 64KB
 				alignment = <0x0 0x10000>; // 64KB
 			};
+			aux_info@CARVEOUT_DISP_EARLY_BOOT_FB {
+				pref_base = <0x0 0x0>;
+				size = <0x0 0x2200000>; // 34MB
+				alignment = <0x0 0x10000>; // 64K
+			};
 			aux_info@CARVEOUT_TSEC_DCE {
 				pref_base = <0x0 0x0>;
 				size = <0x0 0x100000>; // 1MB

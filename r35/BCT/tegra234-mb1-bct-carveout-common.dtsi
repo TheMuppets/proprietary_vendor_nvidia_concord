@@ -23,10 +23,10 @@
 				size = <0x0 0x100000>; // 1MB
 				alignment = <0x0 0x100000>; // 1MB
 			};
-			aux_info@CARVEOUT_APR {
+			aux_info@CARVEOUT_UNUSED3 {
 				pref_base = <0x0 0x0>;
-				size = <0x0 0x800000>; // 8MB
-				alignment = <0x0 0x800000>; // 8MB
+				size = <0x0 0x0>; // 0
+				alignment = <0x0 0x0>; // 0
 			};
 			aux_info@CARVEOUT_TSEC_DCE {
 				pref_base = <0x0 0x0>;
@@ -80,8 +80,8 @@
 			};
 			aux_info@CARVEOUT_CCPLEX_IST {
 				pref_base = <0x0 0x0>;
-				size = <0x0 0x20000000>; // 512MB
-				alignment = <0x0 0x100000>; // 1MB
+				size = <0x0 0x8000000>; // 128MB
+				alignment = <0x0 0x8000000>; // 128MB
 			};
 			aux_info@CARVEOUT_PSC_TZ {
 				pref_base = <0x0 0x0>;

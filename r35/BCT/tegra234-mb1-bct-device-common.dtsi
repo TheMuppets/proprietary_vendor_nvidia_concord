@@ -36,6 +36,7 @@
 //			enable-hs-rate-b;
 			enable-hs-rate-a = <1>;
 			init-state = <0>;
+			ufsdev-ref-clk = <0x00>; /* 0:3 ref-clk 4:7 override */
 		};
 		sd@0 {
 			/* These fields are informational as there is no

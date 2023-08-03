@@ -9,8 +9,9 @@
         enable_eks = <1>;
         hwcrc_default_enable = <0>;
         disable_snor_provisioning = <1>;
-        uefi_auth_key_delegation_enable = <0>;
-        uefi_auth_key_pcp_hash = <0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>;
+        cpubl_auth_key_delegation_enable = <0>;
+        cpubl_auth_key_pcp_hash = <0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>;
+        cpubl_enc_key = <0 0 0 0 0 0 0 0>;
 
         mss_perf {
             mss_pm_disable = <0>;
@@ -38,6 +39,71 @@
             cvb_eeprom_i2c_instance = <0x0>;
             cvb_eeprom_i2c_slave_address = <0xac>;
             cvb_eeprom_read_size = <0x100>;
+        };
+
+        fsi_vmon_data {
+           fsi_vmon {
+                fsi_vmon_config@0 { // SKU = INT
+                    sku_info = <0x0>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@1 { // SKU = TA990SA, TE992M
+                    sku_info = <0x90>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@2 { // SKU = TA975SA
+                    sku_info = <0x97>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@3 { // SKU = TE990M
+                    sku_info = <0xD0>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@4 { // SKU = TE980M
+                    sku_info = <0xD3>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@5 { // SKU = TA979SA, TA985SA
+                    sku_info = <0x92>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@6 { // SKU = TE985M
+                    sku_info = <0xD2>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@7 { // SKU = TE970M
+                    sku_info = <0xD4>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@8 { // SKU = TE960M
+                    sku_info = <0xD5>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@9 { // SKU = TE950M
+                    sku_info = <0xD6>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@10 { // SKU = TA983SA
+                    sku_info = <0x94>;
+                    fsi_vmin_threshold = <0x39>;
+                    fsi_vmax_threshold = <0x57>;
+                };
+                fsi_vmon_config@11 { // SKU = TA977SA
+                    sku_info = <0x96>;
+                    fsi_vmin_threshold = <0x35>;
+                    fsi_vmax_threshold = <0x78>;
+                };
+           };
         };
 
         clocks {
@@ -520,7 +586,7 @@
             };
             ast_region@1 {
                 /* Enable if required. */
-                enable = <0x1>;
+                enable = <0x0>;
                 /* GSC10 in DRAM. Map APR for ACAST */
                 carveout = <0xa>;
                 /* Update according to APE VA map. */
@@ -590,7 +656,7 @@
             };
             ast_region@2 {
                 /* Enable if required. */
-                enable = <0x1>;
+                enable = <0x0>;
                 /* Map APR for ADAST */
                 carveout = <0xa>;
                 va = <0x00000004 0xc0000000>;

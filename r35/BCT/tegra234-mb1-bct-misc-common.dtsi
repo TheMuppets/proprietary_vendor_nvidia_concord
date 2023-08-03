@@ -228,9 +228,9 @@
                     vmin_threshold = <0x17>;
                     vmax_threshold = <0x76>;
                 };
-                soc_vmon_config@4 { // SKU = TE980M
+                soc_vmon_config@4 { // SKU = TE980M(Orin NX)
                     sku_info = <0xD3>;
-                    vmin_threshold = <0x17>;
+                    vmin_threshold = <0x1A>;
                     vmax_threshold = <0x76>;
                 };
                 soc_vmon_config@5 { // SKU = TA979SA, TA985SA
@@ -245,7 +245,7 @@
                 };
                 soc_vmon_config@7 { // SKU = TE970M
                     sku_info = <0xD4>;
-                    vmin_threshold = <0x17>;
+                    vmin_threshold = <0x1A>;
                     vmax_threshold = <0x76>;
                 };
                 soc_vmon_config@8 { // SKU = TE960M
@@ -257,6 +257,16 @@
                     sku_info = <0xD6>;
                     vmin_threshold = <0x1A>;
                     vmax_threshold = <0x76>;
+                };
+                soc_vmon_config@10 { // SKU = TA983SA
+                    sku_info = <0x94>;
+                    vmin_threshold = <0x1D>;
+                    vmax_threshold = <0x69>;
+                };
+                soc_vmon_config@11 { // SKU = TA977SA(Orin N variant 2:FSI merged with core rails)
+                    sku_info = <0x96>;
+                    vmin_threshold = <0x39>;
+                    vmax_threshold = <0x75>;
                 };
             };
             vdd_cpu {
@@ -280,9 +290,9 @@
                     vmin_threshold = <0x14>;
                     vmax_threshold = <0x7B>;
                 };
-                cpu_vmon_config@4 { // SKU = TE980M
+                cpu_vmon_config@4 { // SKU = TE980M(Orin NX)
                     sku_info = <0xD3>;
-                    vmin_threshold = <0x14>;
+                    vmin_threshold = <0x15>;
                     vmax_threshold = <0x7B>;
                 };
                 cpu_vmon_config@5 { // SKU = TA979SA, TA985SA
@@ -297,7 +307,7 @@
                 };
                 cpu_vmon_config@7 { // SKU = TE970M
                     sku_info = <0xD4>;
-                    vmin_threshold = <0x14>;
+                    vmin_threshold = <0x15>;
                     vmax_threshold = <0x7B>;
                 };
                 cpu_vmon_config@8 { // SKU = TE960M
@@ -310,6 +320,16 @@
                     vmin_threshold = <0x15>;
                     vmax_threshold = <0x7B>;
                 };
+                cpu_vmon_config@10 { // SKU = TA983SA
+                    sku_info = <0x94>;
+                    vmin_threshold = <0x17>;
+                    vmax_threshold = <0x6D>;
+                };
+                cpu_vmon_config@11 { // SKU = TA977SA(Orin N variant 2: FSI merged with core rails)
+                    sku_info = <0x96>;
+                    vmin_threshold = <0x39>;
+                    vmax_threshold = <0x75>;
+                };
             };
         };
 
@@ -317,6 +337,102 @@
         soctherm {
             max_chip_limit = <0x69>;
             min_chip_limit = <0xFFFFFFE4>;
+            bjt_offsets {
+                bjt_config@0 { // SKU = INT
+                    sku_info = <0>;
+                    bjt25 = <0>;
+                    bjt26 = <0>;
+                    bjt27 = <0>;
+                    bjt28 = <0>;
+                    bjt29 = <0>;
+                    bjt30 = <0>;
+                };
+#if defined(POWER_PROFILE_983_D_01) // 37W
+                bjt_config@1 { // SKU = TA983
+                    sku_info = <0x94>;
+                    bjt25 = <0x80>; /* 4 */
+                    bjt26 = <0xc8>; /* 6.25 */
+                    bjt27 = <0xb0>; /* 5.5 */
+                    bjt28 = <0xb0>; /* 5.5 */
+                    bjt29 = <0x90>; /* 4.5 */
+                    bjt30 = <0x98>; /* 4.75 */
+                };
+#elif defined(POWER_PROFILE_983_D_02) // 70W
+                bjt_config@1 { // SKU = TA983
+                    sku_info = <0x94>;
+                    bjt25 = <0xa0>; /* 5 */
+                    bjt26 = <0x130>; /* 9.5 */
+                    bjt27 = <0x118>; /* 8.75 */
+                    bjt28 = <0x110>; /* 8.5 */
+                    bjt29 = <0x98>; /* 4.75 */
+                    bjt30 = <0xd8>; /* 6.75 */
+                };
+#endif
+#if defined(POWER_PROFILE_977_D_01) // 23W
+                bjt_config@2 { // SKU = TA977
+                    sku_info = <0x96>;
+                    bjt25 = <0x70>; /* 3.5 */
+                    bjt26 = <0x88>; /* 4.25 */
+                    bjt27 = <0x78>; /* 3.75 */
+                    bjt28 = <0xa0>; /* 5 */
+                    bjt29 = <0x80>; /* 4 */
+                    bjt30 = <0x90>; /* 4.5 */
+                };
+#elif defined(POWER_PROFILE_977_D_02) // 47W
+                bjt_config@2 { // SKU = TA977
+                    sku_info = <0x96>;
+                    bjt25 = <0x80>; /* 4 */
+                    bjt26 = <0xa0>; /* 5 */
+                    bjt27 = <0x98>; /* 4.75 */
+                    bjt28 = <0xf8>; /* 7.75 */
+                    bjt29 = <0xb0>; /* 5.5 */
+                    bjt30 = <0xe0>; /* 7 */
+                };
+#endif
+#if defined(POWER_PROFILE_979_D_01_02) // 58W
+                bjt_config@3 { // SKU = TA979
+                    sku_info = <0x92>;
+                    bjt25 = <0x80>; /* 4 */
+                    bjt26 = <0xf0>; /* 7.5 */
+                    bjt27 = <0xd8>; /* 6.75 */
+                    bjt28 = <0x170>; /* 11.5 */
+                    bjt29 = <0x130>; /* 9.5 */
+                    bjt30 = <0x138>; /* 9.75 */
+                };
+#endif
+#if defined(POWER_PROFILE_990_S_D_01)
+                bjt_config@4 { // SKU = TA990
+                    sku_info = <0x90>;
+                    bjt25 = <0x80>; /* 4 */
+                    bjt26 = <0xe0>; /* 7 */
+                    bjt27 = <0xc0>; /* 6 */
+                    bjt28 = <0x120>; /* 9 */
+                    bjt29 = <0xe8>; /* 7.25 */
+                    bjt30 = <0x100>; /* 8 */
+                };
+#elif defined(POWER_PROFILE_990_D_02) || defined(POWER_PROFILE_990_D_04) || \
+      defined(POWER_PROFILE_990_D_05)
+                bjt_config@4 { // SKU = TA990
+                    sku_info = <0x90>;
+                    bjt25 = <0xb0>; /* 5.5 */
+                    bjt26 = <0x128>; /* 9.25 */
+                    bjt27 = <0x110>; /* 8.5 */
+                    bjt28 = <0x158>; /* 10.75 */
+                    bjt29 = <0xc0>; /* 6 */
+                    bjt30 = <0x128>; /* 9.25 */
+                };
+#elif defined(POWER_PROFILE_990_D_03) // 47W
+                bjt_config@4 { // SKU = TA990
+                    sku_info = <0x90>;
+                    bjt25 = <0x98>; /* 4.75 */
+                    bjt26 = <0xd0>; /* 6.5 */
+                    bjt27 = <0x98>; /* 4.75 */
+                    bjt28 = <0x108>; /* 8.25 */
+                    bjt29 = <0xc8>; /* 6.25 */
+                    bjt30 = <0x100>; /* 8 */
+                };
+#endif
+            };
         };
 
         ///////// ECID ///////////

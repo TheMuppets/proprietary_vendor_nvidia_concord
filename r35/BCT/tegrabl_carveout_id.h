@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016-2022, NVIDIA Corporation.  All rights reserved.
+ * Copyright (c) 2016-2023, NVIDIA Corporation.  All rights reserved.
  *
  * NVIDIA Corporation and its licensors retain all intellectual property
  * and proprietary rights in and to this software and related documentation
@@ -39,23 +39,23 @@ struct tegrabl_carveout_info {
 #define CARVEOUT_APE							7U
 #define CARVEOUT_SPE							8U
 #define CARVEOUT_SCE							9U
-#define CARVEOUT_APR							10U
+#define CARVEOUT_UNUSED3						10U
 #define CARVEOUT_BPMP_DCE						11U
-#define CARVEOUT_UNUSED3						12U
+#define CARVEOUT_DCE_TSEC						12U
 #define CARVEOUT_BPMP_RCE						13U
 #define CARVEOUT_BPMP_MCE						14U
 #define CARVEOUT_ETR							15U
 #define CARVEOUT_BPMP_SPE						16U
 #define CARVEOUT_RCE							17U
 #define CARVEOUT_BPMP_CPUTZ						18U
-#define CARVEOUT_UNUSED1						19U
+#define CARVEOUT_PVA							19U
 #define CARVEOUT_DCE							20U
 #define CARVEOUT_BPMP_PSC						21U
 #define CARVEOUT_PSC							22U
 #define CARVEOUT_NV_SC7							23U
 #define CARVEOUT_CAMERA_TASKLIST				24U
 #define CARVEOUT_BPMP_SCE						25U
-#define CARVEOUT_CV_GOS							26U
+#define CARVEOUT_UNUSED5						26U
 #define CARVEOUT_PSC_TSEC						27U
 #define CARVEOUT_CCPLEX_INTERWORLD_SHMEM		28U
 #define CARVEOUT_FSI							29U
@@ -70,6 +70,7 @@ struct tegrabl_carveout_info {
 #define CARVEOUT_VM_ENCRYPT						38U
 #define CARVEOUT_BLANKET_NSDRAM					CARVEOUT_VM_ENCRYPT
 #define CARVEOUT_CCPLEX_SMMU_PTW				39U
+#define CARVEOUT_DISP_EARLY_BOOT_FB				CARVEOUT_CCPLEX_SMMU_PTW
 #define CARVEOUT_BPMP_CPU_NS					40U
 #define CARVEOUT_FSI_CPU_NS						41U
 #define CARVEOUT_TSEC_DCE						42U
@@ -96,8 +97,8 @@ struct tegrabl_carveout_info {
 #define CARVEOUT_TEMP_MB2_APLT_IO_BUFFERS		63U
 #define CARVEOUT_TEMP_MB2_APLT_SYSRAM_DATA		64U
 #define CARVEOUT_GR								65U
-#define CARVEOUT_TEMP_QB_DATA					66U
-#define CARVEOUT_TEMP_QB_IO_BUFFER				67U
+#define CARVEOUT_MCE_COVERAGE					66U
+#define CARVEOUT_BOOT_LOGS						67U
 #define CARVEOUT_ATF_FSI						68U
 #define CARVEOUT_OPTEE_DTB						69U
 #define CARVEOUT_UNUSED2						70U
