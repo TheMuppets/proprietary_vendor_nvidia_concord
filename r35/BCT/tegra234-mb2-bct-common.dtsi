@@ -1,3 +1,14 @@
+/*
+ * SPDX-FileCopyrightText: Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ * SPDX-License-Identifier: LicenseRef-NvidiaProprietary
+ *
+ * NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
+ * property and proprietary rights in and to this material, related
+ * documentation and any modifications thereto. Any use, reproduction,
+ * disclosure or distribution of this material and related documentation
+ * without an express license agreement from NVIDIA CORPORATION or
+ * its affiliates is strictly prohibited.
+ */
 
 / {
     mb2-misc {
@@ -12,6 +23,7 @@
         cpubl_auth_key_delegation_enable = <0>;
         cpubl_auth_key_pcp_hash = <0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>;
         cpubl_enc_key = <0 0 0 0 0 0 0 0>;
+        backup_gpt_offset = <4>;
 
         mss_perf {
             mss_pm_disable = <0>;
@@ -706,6 +718,21 @@
                 pa = <0xffffffff>;
                 size = <0x431>;
             };
+            ast_region@2 {
+                enable = <0x0>;
+                /* SW carveout for DRAM ECC error injection */
+                carveout = <0x31>;
+                va = <0x00000000 0x60000000>;
+                /* bypass SMMU */
+                physical = <0x1>;
+                /* use bypass StreamID*/
+                vm_index = <0x0>;
+                aperture_id = <0x31>;
+                snoop = <0x0>;
+                /* pa and size used is as configured by mb2 */
+                pa = <0xffffffff>;
+                size = <0x0>;
+            };
         };
         /* Configuration fields for FSI CPU1 AST. */
         auxp_ast_config@11 {
@@ -743,6 +770,21 @@
                 snoop = <0x0>;
                 pa = <0xffffffff>;
                 size = <0x431>;
+            };
+            ast_region@2 {
+                enable = <0x0>;
+                /* SW carveout for DRAM ECC error injection */
+                carveout = <0x31>;
+                va = <0x00000000 0x60000000>;
+                /* bypass SMMU */
+                physical = <0x1>;
+                /* use bypass StreamID*/
+                vm_index = <0x0>;
+                aperture_id = <0x31>;
+                snoop = <0x0>;
+                /* pa and size used is as configured by mb2 */
+                pa = <0xffffffff>;
+                size = <0x0>;
             };
         };
         /* Configuration fields for FSI CPU2 AST. */
@@ -782,6 +824,21 @@
                 pa = <0xffffffff>;
                 size = <0x431>;
             };
+            ast_region@2 {
+                enable = <0x0>;
+                /* SW carveout for DRAM ECC error injection */
+                carveout = <0x31>;
+                va = <0x00000000 0x60000000>;
+                /* bypass SMMU */
+                physical = <0x1>;
+                /* use bypass StreamID*/
+                vm_index = <0x0>;
+                aperture_id = <0x31>;
+                snoop = <0x0>;
+                /* pa and size used is as configured by mb2 */
+                pa = <0xffffffff>;
+                size = <0x0>;
+            };
         };
         /* Configuration fields for FSI CPU3 AST. */
         auxp_ast_config@13 {
@@ -819,6 +876,21 @@
                 snoop = <0x0>;
                 pa = <0xffffffff>;
                 size = <0x431>;
+            };
+            ast_region@2 {
+                enable = <0x0>;
+                /* SW carveout for DRAM ECC error injection */
+                carveout = <0x31>;
+                va = <0x00000000 0x60000000>;
+                /* bypass SMMU */
+                physical = <0x1>;
+                /* use bypass StreamID*/
+                vm_index = <0x0>;
+                aperture_id = <0x31>;
+                snoop = <0x0>;
+                /* pa and size used is as configured by mb2 */
+                pa = <0xffffffff>;
+                size = <0x0>;
             };
         };
         /* Configuration fields for FSI CHSM AST. */

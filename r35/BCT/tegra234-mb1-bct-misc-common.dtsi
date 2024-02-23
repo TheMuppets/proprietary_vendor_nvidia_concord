@@ -18,6 +18,15 @@
         enable_vpr_encryption = <1>;
         enable_permissive_ccplex_firewalls = <0>;
         axi_ap_virtual_client = <1>;
+#ifdef ENABLE_SAMSUNG_UFS
+        tx_drv_amp_sel7 = <0x15>;
+        tx_drv_post_sel0 = <0xA>;
+#else
+        tx_drv_amp_sel7 = <0x11>;
+        tx_drv_post_sel0 = <0x0>;
+#endif
+        disable_scpm_reset = <0>;
+        disable_pod_reset = <0>;
         enable_nsdram_encryption = <1>;
         enable_blanket_nsdram_carveout = <1>;
         enable_scf_tracker = <0>;
