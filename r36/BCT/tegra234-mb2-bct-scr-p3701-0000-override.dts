@@ -1,7 +1,6 @@
 /*
- * T234Pre_L4T_Concord.dtsi
- *
- * Copyright (c) 2017 - 2022, NVIDIA Corporation.  All Rights Reserved.
+ * SPDX-FileCopyrightText: Copyright (c) 2017-2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ * SPDX-License-Identifier: LicenseRef-NvidiaProprietary
  *
  * NVIDIA Corporation and its licensors retain all intellectual property
  * and proprietary rights in and to this software and related documentation
@@ -42,6 +41,11 @@
         reg@5403 { /* CBB_CENTRAL_CBB_FIREWALL_SPI3_BLF, WRITE_CTL */
             exclusion-info = <2>;
             value = <0x0f000042>;
+        };
+
+        reg@322 { /* GPIO_CTL, GPIO_M_SCR_00_0 */
+            exclusion-info = <2>;
+            value = <0x38009494>;
         };
     };
 };

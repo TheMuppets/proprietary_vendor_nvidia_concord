@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: Copyright (c) 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ * SPDX-FileCopyrightText: Copyright (c) 2023-2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
  * SPDX-License-Identifier: LicenseRef-NvidiaProprietary
  *
  * NVIDIA CORPORATION, its affiliates and licensors retain all intellectual
@@ -31,6 +31,8 @@
         cpubl_enc_key = <0 0 0 0 0 0 0 0>;
         fuse_reserved_odm0 = <0>;
         backup_gpt_offset = <4>;
+        /* 24 indicates the time in seconds after which each expiry happens */
+        ccplex_wdt_period=<24>;
 
         mss_perf {
             mss_pm_disable = <0>;
