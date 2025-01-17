@@ -755,7 +755,7 @@
                 physical = <0x1>;
                 /* use bypass StreamID*/
                 vm_index = <0x0>;
-                aperture_id = <0x31>;
+                aperture_id = <0x0>;
                 snoop = <0x0>;
                 /* pa and size used is as configured by mb2 */
                 pa = <0xffffffff>;
@@ -808,7 +808,7 @@
                 physical = <0x1>;
                 /* use bypass StreamID*/
                 vm_index = <0x0>;
-                aperture_id = <0x31>;
+                aperture_id = <0x0>;
                 snoop = <0x0>;
                 /* pa and size used is as configured by mb2 */
                 pa = <0xffffffff>;
@@ -861,7 +861,7 @@
                 physical = <0x1>;
                 /* use bypass StreamID*/
                 vm_index = <0x0>;
-                aperture_id = <0x31>;
+                aperture_id = <0x0>;
                 snoop = <0x0>;
                 /* pa and size used is as configured by mb2 */
                 pa = <0xffffffff>;
@@ -914,7 +914,7 @@
                 physical = <0x1>;
                 /* use bypass StreamID*/
                 vm_index = <0x0>;
-                aperture_id = <0x31>;
+                aperture_id = <0x0>;
                 snoop = <0x0>;
                 /* pa and size used is as configured by mb2 */
                 pa = <0xffffffff>;
