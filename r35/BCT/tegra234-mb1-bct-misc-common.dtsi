@@ -3,7 +3,6 @@
 
 / {
     misc {
-        enable_dram_page_blacklisting = <0x0>;
         enable_vpr_resize = <0>;
         disable_sc7 = <1>;
         disable_fuse_visibility = <0>;
@@ -31,20 +30,6 @@
         enable_blanket_nsdram_carveout = <1>;
         enable_scf_tracker = <0>;
         keep_xusb_pd_up = <1>;
-
-        tsc_controls {
-            tsc_locking_config = <0x119>;
-            tsc_locking_diff_configuration = <0x0>;
-            tsc_locking_ref_frequency_configuration = <0x0>;
-            tsc_locking_control = <0x1>;
-            tsc_locking_adjust_configuration = <0x0>;
-            tsc_locking_fast_adjust_configuration = <0x5b911>;
-            tsc_locking_adjust_delta_control = <0x67>;
-            tsc_capture_control_ptx = <0x0>;
-            tsc_capture_config_ptx = <0x313>;
-            tsc_stscrsr = <0x1>;
-            tsc_locking_adjust_num_control = <0x0>;
-        };
 
         cpu {
             ////////// cpu variables //////////
@@ -451,5 +436,60 @@
            ecid_2 = <0x0>;
            ecid_3 = <0x0>;
        };
+
+        ///////// MBWT ///////////
+        mbwt_settings {
+            ape = <0>;
+            axiap = <0>;
+            nvdec_rd = <0>;
+            nvdec_wr = <0>;
+            nvjpg = <0>;
+            nvjpg1 = <0>;
+            xusb_d_rd = <0>;
+            xusb_d_wr = <0>;
+            xusb_h_rd = <0>;
+            xusb_h_wr = <0>;
+            dram_freq_mhz = <0x0>;
+            data@0 { // APE
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@1 { // DFD/AXIAP
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@2 { // NVDEC:Read
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@3 { // NVDEC:Write
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@4 { // NVJPG
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@5 { // NVJPG1
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@6 { // XUSB-D:Read
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@7 { // XUSB-D:Write
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@8 { // XUSB-H:Read
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+            data@9 { // XUSB-H:Write
+                target_util = <0x0>;
+                hub_grant_dec = <0x0>;
+            };
+        };
     };
 };

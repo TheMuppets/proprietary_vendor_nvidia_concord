@@ -43,7 +43,7 @@
 				size = <0x0 0x100000>; // 1MB
 				alignment = <0x0 0x100000>; // 1MB
 			};
-			aux_info@CARVEOUT_UNUSED1 {
+			aux_info@CARVEOUT_PVA {
 				pref_base = <0x0 0x0>;
 				size = <0x0 0x0>; // 0
 				alignment = <0x0 0x0>; // 0x0
